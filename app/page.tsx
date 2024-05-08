@@ -1,10 +1,13 @@
 import React from 'react'
+import '/app/globals.css'
+
+
 
 const home = () => {
   return (
  
     
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card">
       <h1> Salon App </h1>
   <figure><img src="salon1.png" alt="salon" /></figure>
   <div className="card-body"> 

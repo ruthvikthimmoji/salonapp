@@ -1,11 +1,12 @@
 import React from 'react'
 
+
 const LoginPage = () => {
   return (
-    <div>
+    <div className='card'>
       <a href='..'> <button>back</button></a>
     <div>
-      <h1>Salon App</h1>
+      <h1 className="mb-3 text-s font-semibold " >Salon App</h1>
         <h1>LOGIN PAGE</h1>
         <div className='container'>
         <form action="/submit" method="post">
@@ -16,7 +17,7 @@ const LoginPage = () => {
             <label htmlFor="password">Password </label>
             <input type='password' id='password' name='password' placeholder='password'/>
             <a href='/profile'>
-              <button>Login</button></a>
+              <button >Login</button></a>
             or New user? create a account <a href='/signin'> signin</a>
         </form>
 
