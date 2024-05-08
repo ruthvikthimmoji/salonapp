@@ -13,7 +13,8 @@ const LoginPage = () => {
             {/* <input type='tel' id='phone' name='Phone Number'></input> */}
             <label htmlFor="password">Password </label>
             <input type='password' id='password' name='password' placeholder='password'/>
-            <button type="submit">Submit</button>
+            <a href='/profile'>
+              <button>Submit</button></a>
             or New user? create a account <a href='/signin'> signin</a>
         </form>
 
