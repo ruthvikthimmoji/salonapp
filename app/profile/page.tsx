@@ -6,11 +6,9 @@ const Profile = () => {
       <h1> Profile </h1> 
       <a href='login'> <button> Logout </button></a> 
       <div>
-        <table>
-          <tbody>
-            <a href='/customers'></a>
-          </tbody>
-        </table>
+            <a href='/customers'> <button> customers Page </button></a>
+
+            
         
         
         
