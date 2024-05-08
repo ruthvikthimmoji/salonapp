@@ -16,21 +16,9 @@ const sigIn = () => {
           
           <input type="checkbox" id="checkbox" name="checkbox"/>
           <button type="submit">Submit</button>
-          or 
-          signin with
-          <a href='#' className='google'>
-            <button type='./google.com'> google</button>
-            </a>
-
-
+          or
       </form>
-
-        
       </div>
-
-
-
-
   </div>
 )
 }
