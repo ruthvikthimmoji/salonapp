@@ -2,10 +2,7 @@ import React from 'react'
 
 const home = () => {
   return (
-    // <div>
-          
-    //     <a href='/signin'> Signin</a>/ <a href='/login'> Login</a>
-    // </div>
+ 
     
     <div className="card w-96 bg-base-100 shadow-xl">
       <h1> Salon App </h1>
@@ -24,6 +21,7 @@ const home = () => {
        </a>
   </div>
 </div>
+
 
 
   )

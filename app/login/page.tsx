@@ -3,6 +3,8 @@ import React from 'react'
 const LoginPage = () => {
   return (
     <div>
+      <a href='..'> <button>back</button></a>
+    <div>
       <h1>Salon App</h1>
         <h1>LOGIN PAGE</h1>
         <div className='container'>
@@ -24,6 +26,7 @@ const LoginPage = () => {
 
 
 
+    </div>
     </div>
   )
 }
