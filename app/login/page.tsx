@@ -6,7 +6,7 @@ const LoginPage = () => {
       <h1>Salon App</h1>
         <h1>LOGIN PAGE</h1>
         <div className='container'>
-        <form>
+        <form action="/submit" method="post">
             <label htmlFor="email">Email</label>
             <input type="email" id="email" name="email" placeholder="email"/>
             {/* <label htmlFor="Phone Number">PhoneNumber</label> */}
