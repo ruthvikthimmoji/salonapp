@@ -2,7 +2,11 @@ import React from 'react'
 
 const sigIn = () => {
   return (
-    <div>sigIn</div>
+    <div>
+        <h1>SIGN IN PAGE</h1>
+
+
+    </div>
   )
 }
 
