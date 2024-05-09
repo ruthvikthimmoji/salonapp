@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react'
 
-const signUp = () => {
+function SignUp(){
 
   const [phone, setPhone] = useState();
   const handlePhoneChange = (event: any) => {
@@ -34,4 +34,4 @@ const signUp = () => {
 )
 }
 
-export default signUp
+export default SignUp
