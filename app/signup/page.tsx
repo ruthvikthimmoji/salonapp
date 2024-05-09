@@ -3,7 +3,9 @@ import React, { useState } from 'react'
 
 const signUp = () => {
 
-  const [phone, setPhone] = useState('');
+  const [phone, setPhone] = useState({
+    phone =''
+  });
   const handlePhoneChange = (event: any) => {
     setPhone(event.target.value);
   };
