@@ -7,21 +7,21 @@ const home = () => {
   return (
  
     
-    <div className="card">
+    <div className="">
       <h1> Salon App </h1>
   <figure><img src="salon1.png" alt="salon" /></figure>
-  <div className="card-body"> 
+  <div className=""> 
       <a href='/login'> 
        <button> 
         Login
        </button>
        </a>
-       or
        <a href='/signin'> 
        <button> 
         Signin
        </button>
        </a>
+       <a href='tel:6361906550'> <button> contact Us</button></a>
   </div>
 </div>
 
