@@ -19,7 +19,7 @@ const LoginPage = () => {
             <input  className='px-12 py-4' type='password' id='password' name='password' placeholder='password'/>
             <a href='/profile'>
               <button >Login</button></a>
-            or New user? create a account <a href='/signin'> signin</a>
+            or New user? create a account <a href='/signup'> signup</a>
         </form>
         </div>
     </div>

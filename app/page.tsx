@@ -1,5 +1,5 @@
 import React from 'react'
-import '/app/globals.css'
+import './globals.css'
 
 
 
@@ -13,7 +13,7 @@ const home = () => {
       
       <div className='flex justify-center'>
         {/* <img src='images.png'  className='max-h-screen max-w-screen-xl' alt='salon'></img> */}
-        <img src='Asset-1-1.png' className=' flex items-center p-8 '></img>
+        <img src='Asset-1-1.png' alt='image' className=' flex items-center p-8 '></img>
         </div>
         <div className='p-2 flex justify-center'>
         <a href='/login'> <button name='login' className="justify-center rounded-btn p-3 m-7 bg-emerald-700 text-white hover:bg-sky-700 px-20 py-4 text-center font-bold">Login</button></a>
