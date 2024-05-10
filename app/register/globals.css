@@ -4,9 +4,6 @@
 
 :root {
   background-color: #D8A89B;
-  /* background-image: url(./image2.png);
-  background-size: cover; /* Cover the entire viewport */
-  /* background-repeat: initial; */
 } 
 
 @media (prefers-color-scheme: dark) {
