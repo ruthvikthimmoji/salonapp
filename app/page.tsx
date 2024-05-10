@@ -6,16 +6,20 @@ import './globals.css'
 const home = () => {
   return (
     <div>
+
+
       <header className='container mx-auto flex m-4'>
         <div>
           <h1 className=' px-8 mt-8 text-5xl font-serif font-extrabold text-white'>SALON APP</h1>
         </div>
       </header>
+
+
       <main className='m-12'>
         <div className="container mx-auto mt-4 flex flex-wrap justify-between items-center">
           <div className=' bg- flex flex-col px-12 py-8 mt-4 justify-center'>
           <h1 className='font-serif  font-extrabold text-4xl  px-8 text-white' > Welcome 👋 </h1>
-          <a href='./login' className="text-center"> 
+          <a href='./register' className="text-center"> 
           <button className='m-8 rounded-btn px-12 py-4 bg-emerald-600 hover:bg-cyan-600 text-white hover:text-gray-950 '> Register</button> 
           </a> 
           <h3 className='flex justify-center  text-s text-white py-2'> Need help to Setup?
@@ -57,24 +61,8 @@ const home = () => {
               </div>
           </div>
        </footer>
-   
-   
     
-
-    
-
 </div>
-
-      
-
-
-
-
-
-      
-
-
-
   )
 }
 
