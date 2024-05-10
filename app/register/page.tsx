@@ -57,9 +57,9 @@ const RegisterPage = () => {
       <header> 
         <div className='flex justify-between items-center'>
         <a href='..'>
-          <button className='border border-emerald-600 rounded-btn px-4 py-2 m-6'> 👈BACK </button>
+          <button className='border border-white rounded-btn px-4 py-2 m-6'> 👈BACK </button>
           </a>
-        <h2 className='flex justify-end font-sans text-2xl font-semibold px-12 '>SALON APP</h2>
+        <h2 className='flex justify-end font-sans text-2xl font-semibold text-white px-12 '>SALON APP</h2>
         </div>
       </header>
 
