@@ -5,30 +5,80 @@ import './globals.css'
 
 const home = () => {
   return (
+    <div>
+      <header className='container mx-auto flex m-4'>
+        <div>
+          <h1 className=' px-8 mt-8 text-5xl font-serif font-extrabold text-white'>SALON APP</h1>
+        </div>
+      </header>
+      <main className='m-12'>
+        <div className="container mx-auto mt-4 flex flex-wrap justify-between items-center">
+          <div className=' bg- flex flex-col px-12 py-8 mt-4 justify-center'>
+          <h1 className='font-serif  font-extrabold text-4xl  px-8 text-white' > Welcome 👋 </h1>
+          <a href='./login' className="text-center"> 
+          <button className='m-8 rounded-btn px-12 py-4 bg-emerald-600 hover:bg-cyan-600 text-white hover:text-gray-950 '> Register</button> 
+          </a> 
+          <h3 className='flex justify-center  text-s text-white py-2'> Need help to Setup?
+          <a href='tel:6361906550' className='hover:text-gray-600' > contact us </a></h3>
+          </div>
+          <div className='flex flex-col mt-8'>
+            <img className='p-4 scroll-py-12' src='Asset-1-1.png'></img>
+          </div>
+        </div>
+      </main>
+
+
+
+
+      <footer className=" text-white m-9">
+         <div className="container mx-auto flex flex-wrap justify-between items-center">
+          <div className="flex flex-col p-4">
+            <span>Contact us:</span>
+            <span>Email: salonapp@exc.com</span>
+            <span>Phone: +1 123-456-7890</span>
+             </div>
+
+             <div className="flex flex-col p-4">
+                <span></span>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/services">Services</a>
+                <a href="/contact">Contact</a>
+              </div>
+              <div className="flex flex-col p-4">
+                <span>Connect with us:</span>
+                <a href="#"><i className="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i className="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i className="fab fa-instagram"></i> Instagram</a>
+              </div>
+
+              <div className="text-center mt-4">
+                <span>&copy; SalonAPP. All rights reserved.</span>
+              </div>
+          </div>
+       </footer>
    
-    <div className='bg-red-300 w-screen' >
-      <div>
-        <h1 className='p-12  text-3xl  flex justify-start font-semibold text-emerald-50'>Salon App</h1>
-      </div>
-      
-      <div className='flex justify-center'>
-        {/* <img src='images.png'  className='max-h-screen max-w-screen-xl' alt='salon'></img> */}
-        <img src='Asset-1-1.png' alt='image' className=' flex items-center p-8 '></img>
-        </div>
-        <div className='p-2 flex justify-center'>
-        <a href='/login'> <button name='login' className="justify-center rounded-btn p-3 m-7 bg-emerald-700 text-white hover:bg-sky-700 px-20 py-4 text-center font-bold">Login</button></a>
-        </div>
-        <div className='m-2 flex justify-center '>
-        <h2 className=' text-emerald-50  hover:text-sky-700'>Don't have an account? <a href='/signup'> SignUp</a></h2>
-      </div>
-      <div className='p-8'>
-        <h1 className=' text-emerald-50 hover:text-sky-700 text-xs flex justify-center'>Need help to setup?<a href='tel:9148740550'><button>ContactUs.</button>
-        </a></h1>
-      </div>
-    </div>
- 
+   
     
+
+    
+
+</div>
+
+      
+
+
+
+
+
+      
+
+
+
   )
 }
 
 export default home
+
+
+
