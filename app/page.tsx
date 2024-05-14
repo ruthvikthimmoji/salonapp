@@ -20,15 +20,29 @@ const home = () => {
           <div className=' bg- flex flex-col px-12 py-8 mt-4 justify-center'>
           <h1 className='font-serif  font-extrabold text-4xl  px-8 text-white' > Welcome 👋 </h1>
           <a href='./register' className="text-center"> 
-          <button className='m-8 rounded-btn px-12 py-4 bg-emerald-600 hover:bg-cyan-600 text-white hover:text-gray-950 '> Register</button> 
+          <button className='m-8 rounded-btn px-12 py-4 bg-amber-400 hover:bg-cyan-900 text-white '> Register</button> 
           </a> 
-          <h3 className='flex justify-center  text-s text-white py-2'> Need help to Setup?
-          <a href='tel:6361906550' className='hover:text-gray-600' > contact us </a></h3>
+          <h3 className='flex justify-center  text-s text-white py-2'> Need help to Setup? 
+          <a href='tel:6361906550' className='hover:underline' > Contact us </a></h3>
           </div>
           <div className='flex flex-col mt-8'>
             <img className='p-4 scroll-py-12' src='Asset-1-1.png'></img>
           </div>
         </div>
+
+
+        <div className="h-screen overflow-y-scroll snap snap-y snap-mandatory">
+      <div className="h-screen flex justify-center items-center snap-start bg-blue-200">
+        <h1 className="text-4xl">Section 1</h1>
+      </div>
+      <div className="h-screen flex justify-center items-center snap-start bg-green-200">
+        <h1 className="text-4xl">Section 2</h1>
+      </div>
+      <div className="h-screen flex justify-center items-center snap-start bg-yellow-200">
+        <h1 className="text-4xl">Section 3</h1>
+      </div>
+    </div>
+
       </main>
 
 
