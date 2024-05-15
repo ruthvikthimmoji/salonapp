@@ -33,12 +33,6 @@ const customerPage = () => {
   };
 
 
-
-  const addToTable = () => {
-    
-  };
-
-
   return (
     <div className='min-h-screen'>
       <header className=' m-6 mx-auto rounded-btn px-4 py-8'>
@@ -73,7 +67,7 @@ const customerPage = () => {
           </tbody>
         </table>
         <div className='flex justify-end items-end '>
-          <button onClick={addToTable} className='px-6 py-2 m-2 rounded-badge bg-orange-500 shadow-lg hover:shadow-black'>Add
+          <button className='px-6 py-2 m-2 rounded-badge bg-orange-500 shadow-lg hover:shadow-black'>Add
           </button></div>
         <div className='py-4 m-8 rounded-badge border hover:bg-orange-600 flex justify-center items center'>
           <a href='/offers'>
@@ -95,6 +89,3 @@ const customerPage = () => {
 
 export default customerPage
 
-function setEdit(arg0: boolean) {
-  throw new Error('Function not implemented.');
-}
