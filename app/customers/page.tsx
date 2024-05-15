@@ -1,8 +1,8 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import './globals.css';
 
-const customerPage = () => {
+const CustomerPage = () => {
   const [customers, setCustomers] = useState([
     {
       key: 1,
@@ -23,6 +23,7 @@ const customerPage = () => {
       attendant: "me"
     },
   ]);
+
   const toggleExpanded = (indexToChange: number) => {
     setCustomers(customers.map((customer, index) => {
       if (index === indexToChange) {
@@ -87,5 +88,5 @@ const customerPage = () => {
   )
 }
 
-export default customerPage
+export default CustomerPage
 
