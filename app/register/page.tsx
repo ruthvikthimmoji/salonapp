@@ -65,9 +65,9 @@ const RegisterPage = () => {
       <header>
         <div className='flex justify-between items-center'>
           <a href='..'>
-            <button className='border border-yellow-900   hover:border-amber-600 hover: bg-amber-600 rounded-btn px-4 py-2 m-6'> 👈 BACK </button>
+            <button className='hover:bg-orange-300  bg-orange-500 rounded-badge px-4 py-2 m-6 hover:text-black'> 👈 BACK </button>
           </a>
-          <h2 className='flex justify-end font-sans text-2xl font-semibold text-white px-12 '>SALON APP</h2>
+          <h2 className='flex justify-end font-sans text-2xl font-semibold text-orange-300 px-12 '>SALON APP</h2>
         </div>
       </header>
 
@@ -90,7 +90,7 @@ const RegisterPage = () => {
               <>
                 <label htmlFor='Name' className="mb-2" > {!hasAccount ? "Enter your" : ""} Name</label>
                 <input
-                  className='border rounded-btn px-6 py-2 m-4 bg-transparent'
+                  className='border rounded-badge px-6 py-2 m-4 bg-transparent'
                   type="Name"
                   id="Name"
                   name="Name"
@@ -106,7 +106,7 @@ const RegisterPage = () => {
 
             <label htmlFor="phone" className="mb-2">Phone Number</label>
             <input
-              className='border rounded-btn px-6 py-2 m-4 bg-transparent'
+              className='border rounded-badge px-6 py-2 m-4 bg-transparent'
               type="tel"
               id="phone"
               name="phone"
@@ -116,7 +116,7 @@ const RegisterPage = () => {
               autoComplete='on'
             />
             {!otpRequested ?
-              <button onClick={handleRequestOTP} className=" px-6 py-2 m-2 bg-amber-600  rounded-md">
+              <button onClick={handleRequestOTP} className=" px-6 py-2 m-2 bg-orange-500  rounded-badge">
                 Request OTP
               </button>
               : null}
@@ -124,7 +124,7 @@ const RegisterPage = () => {
               {otpRequested && !otpVerified ?
                 <div>
                   <label htmlFor="otp">Enter OTP</label>
-                  <input className=' border rounded-btn px-4 py-2 m-4 bg-transparent focus:outline-none  focus:border-amber-600'
+                  <input className=' border rounded-btn px-4 py-2 m-4 bg-transparent focus:outline-none  focus:border-orange-500'
                     type="text"
                     id="otp"
                     name="otp"
@@ -136,12 +136,12 @@ const RegisterPage = () => {
                 : null}
             </div>
             {otpRequested && !otpVerified ?
-              <button onClick={handleVerifyOTP} className="mt-2 px-4 py-2 bg-amber-600 rounded-md">
+              <button onClick={handleVerifyOTP} className="mt-2 px-4 py-2 bg-orange-500 rounded-badge">
                 Verify OTP
               </button>
               : null}
               {otpVerified && !hasAccount?
-              <button onClick={handleSave} className="mt-2 px-4 py-2 bg-amber-600 rounded-md">
+              <button onClick={handleSave} className="mt-2 px-4 py-2 bg-orange-500 rounded-badge">
                 Save
               </button>
               : null}

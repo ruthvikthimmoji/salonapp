@@ -1,74 +1,75 @@
 import React from 'react'
-import './globals.css';
+import './globals.css'
 
-const offerPage = () => {
+const offersPage = () => {
+  const offers = [
+    {
+      key: 1,
+      SNumber: "Dheeraj",
+      Description: "25%off on Haircut",
+      status: true
+    }
+
+  ];
+
   return (
-    <div>
-      <header className='flex justify-between items-center m-6 mx-auto rounded-btn px-4 py-8'>
-        <a href='./profile'>
-        <button className='rounded-btn px-4 py-2 border border-white bg-transparent hover:bg-amber-600'>
-          Back
-        </button>
-        </a>
-        <h1 className='text-4xl font-semibold'>Offers</h1>
-        <button className='rounded-btn px-4 py-2 border border-white  bg-amber-600'>
-          Logout
-        </button>
+    <div className='min-h-screen'>
+      <header className=' m-6 mx-auto rounded-btn px-4 py-8'>
+        <div className='flex justify-between items-center'>
+          <a href='./customers'>
+          <button className='px-6 py-4 m-2 shadow-lg shadow-black bg-orange-500 rounded-badge'>
+            Back
+          </button></a>
+          <h1 className='text-4xl font-bold'>
+            Offers
+          </h1>
+          <button className='px-6 py-4 m-2 shadow-lg shadow-black bg-orange-500 rounded-badge'>
+            Logout
+          </button>
+        </div>
       </header>
-
-      <main >
-        <div>
-          {/* <h2>Customers Details</h2> */}
-
+      <main>
+        <div className="container py-4  mx-auto">
+          <table className='border w-[96%] my-6 mx-[2%]'>
+            <thead className='bg-orange-500 border'>
+              <tr>
+                <th>SNumber</th>
+                <th>Description</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+            {offers.map((offer) => (
+              <tr key={offer.key}>
+                <td className='text-center'>{offer.SNumber}</td>
+                <td className='text-center'>{offer.Description}</td>
+                <td className='text-center'>{offer.status} <input type="checkbox"/></td>
+              </tr>))}
+            </tbody>
+          </table>
         </div>
 
-        {/* <div className='font-bold flex justify-start px-4'>
-          <h1>OFFERS /-</h1> 
-          <div> */}
-
-          {/* </div> */}
-        
-
-
-        
-      
-<div className='bg-transparent'>
-<div className="w-full overflow-x-scroll snap snap-x snap-mandatory flex scroll-py-12">
-      <div className="w-1/2 h-screen flex-shrink-0 flex justify-center items-center snap-start border border-red-300">
-        <h1 className="text-5xl m-4">50% off on haircut </h1>
-      </div>
-      <div className="w-1/2 flex-shrink-0 flex justify-center items-center snap-start border border-pink-700">
-        <h1 className="text-4xl">Section 2</h1>
-      </div>
-      <div className="w-1/2 flex-shrink-0 flex justify-center items-center snap-start border border-yellow-500 ">
-        <h1 className="text-4xl">Section 3</h1>
-      </div>
-    </div>
-    </div>
+        <div className="w-screen h-screen overflow-x-scroll snap snap-x snap-mandatory m-5 flex rounded-box">
+          <div className="w-1/2 flex-shrink-0 flex justify-center items-center snap-start">
+            <h1 className="text-4xl">Section 1</h1>
+          </div>
+          <div className="w-1/2 flex-shrink-0 flex justify-center items-center snap-start">
+            <h1 className="text-4xl">Section 2</h1>
+          </div>
+          <div className="w-1/2  flex-shrink-0 flex justify-center items-center snap-start">
+            <h1 className="text-4xl">Section 3</h1>
+          </div>
+        </div>
 
 
-
-
-
-
-
-
-        
       </main>
-
-
-      <footer className='py-4'>
-      <div className="text-center mt-4 font-extralight" >
-        <span>&copy; SalonApp. All rights reserved.</span>
-      </div>
+      <footer>
+        <div className="text-center mt-4 font-extralight" >
+          <span>&copy; SalonApp. All rights reserved.</span>
+        </div>
       </footer>
-        
-
-        
     </div>
-
-
   )
 }
 
-export default offerPage
+export default offersPage
