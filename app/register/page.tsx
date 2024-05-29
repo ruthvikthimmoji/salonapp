@@ -65,9 +65,9 @@ const RegisterPage = () => {
       <header>
         <div className='flex justify-between items-center'>
           <a href='..'>
-            <button className='hover:bg-orange-300  bg-orange-500 rounded-badge px-4 py-2 m-6 hover:text-black'> 👈 BACK </button>
+            <button className='hover:bg-orange-300  bg-orange-500 rounded-badge px-4 py-2 m-6 shadow-lg shadow-black hover:text-black'> 👈 BACK </button>
           </a>
-          <h2 className='flex justify-end font-sans text-2xl font-semibold text-orange-300 px-12 '>SALON APP</h2>
+          <h2 className='flex justify-end font-sans text-2xl font-semibold text-white px-12 '>SALON APP</h2>
         </div>
       </header>
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import './globals.css'
+import Link from 'next/link'
 
 
 const Profile = () => {
@@ -37,15 +38,15 @@ const Profile = () => {
       <input className=' border rounded-badge px-6 py-2 bg-transparent'
        readOnly={true}></input>
        
-       <a href='./customers'>
+       <Link href="/profile/customers">
       <button className=" px-12 py-2 m-4 bg-amber-600 hover:bg-orange-300 hover:text-black rounded-badge">
         customers Page
-      </button></a>
+      </button></Link>
    
-      <a href='./offers'>
+      <Link href="/profile/offers">
       <button className=" px-16 py-2 m-4 bg-amber-600 hover:bg-orange-300 hover:text-black rounded-badge" >
         Offers Page
-      </button></a>
+      </button></Link>
       </div>
     </main>
     
